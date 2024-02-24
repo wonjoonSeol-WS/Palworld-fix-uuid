@@ -22,3 +22,7 @@ mypy = "^1.8.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+Homepage = "https://github.com/wonjoonSeol-WS/Palworld-fix-uuid"
+Issues = "https://github.com/wonjoonSeol-WS/Palworld-fix-uuid/issues"
