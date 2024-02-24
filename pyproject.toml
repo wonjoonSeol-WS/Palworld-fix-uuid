@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "palworld-fix-uuid"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Wonjoon Seol <wonjoon.seol@gmail.com>"]
 readme = "README.md"
