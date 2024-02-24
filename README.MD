@@ -30,10 +30,10 @@ The name of that new .sav file is the co-op host's new GUID. We will need the co
   
 ```bash 
 # first file
-palworld-fix-uuid --file-path "{path to 0000...0001.sav} --to-uuid {NEW UUID}  
+palworld-fix-uuid --file-path "{path to 0000...0001.sav}" --to-uuid {NEW UUID}  
 
 # second file
-palworld-fix-uuid --file-path "{path to Level.sav} --to-uuid {NEW UUID}  
+palworld-fix-uuid --file-path "{path to Level.sav}" --to-uuid {NEW UUID}  
 ```  
 
 Check the output folder.  
