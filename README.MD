@@ -4,7 +4,7 @@ This projects implements suggestion on this thread: https://github.com/xNul/palw
 This tool should provide less invasive way to transfer host (and any other player) save to another player.  
 
 
-The existing method from https://github.com/xNul/palworld-host-save-fix created unwanted bugs such as [Left click issue](https://github.com/xNul/palworld-host-save-fix), pals that do not work etc, new guid character need to be at least level 2 etc..  
+The existing method from https://github.com/xNul/palworld-host-save-fix created unwanted bugs such as [Left click issue](https://github.com/xNul/palworld-host-save-fix), pals that do not work, new guid character need to be at least level 2 etc..  
 
 ## Usage
 
@@ -93,7 +93,7 @@ OptionSettings=(Difficulty=None,DayTimeSpeedRate=1.000000,NightTimeSpeedRate=1.0
 ```
 
 Update publicIP, AdminPassword, ServerPassword.  
-If you do not expose your public IP, use VPN service like nordVPN.  
+If you do not want to expose your public IP, use VPN service like nordVPN.  
 
 Meshnet example: (Use meshnet IP instead of your public IP)  
 https://meshnet.nordvpn.com/how-to/gaming/palworld-dedicated-server  
