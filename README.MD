@@ -10,7 +10,7 @@ The existing method from https://github.com/xNul/palworld-host-save-fix created 
 
 ⚠️ Keep a backup copy of your save ⚠️  
 
-### Step 1: Finding new character GUID
+### Step 1: Finding new character UUID
 - Copy your desired save's folder from `C:\Users\<username>\AppData\Local\Pal\Saved\SaveGames\<random_numbers>` to `PalServer\Pal\Saved\SaveGames\0`.
 
 - In the `PalServer\Pal\Saved\Config\WindowsServer\GameUserSettings.ini` file, change the DedicatedServerName to match your save folder's name. For example, if your save folder's name is `2E85FD38BAA792EB1D4C09386F3A3CDA`, the DedicatedServerName changes to `DedicatedServerName=2E85FD38BAA792EB1D4C09386F3A3CDA`.
@@ -20,7 +20,7 @@ The existing method from https://github.com/xNul/palworld-host-save-fix created 
 - The co-op host must create a new character on the dedicated server. A new .sav file should appear in `PalServer\Pal\Saved\SaveGames\0\<your_save_here>\Players\`.
 The name of that new .sav file is the co-op host's new GUID. We will need the co-op host's new GUID for the script to work.  
 
-### Step 2: 
+### Step 2: Overwrite new UUID into old save files 
 - Copy `0000...000000000000000000001.sav` file and Level.sav file from the original save folder and copy it into a temporary directory.
 
 - Install this script (Need Python)
@@ -38,6 +38,9 @@ palworld-fix-uuid --file-path "{path to Level.sav} --to-uuid {NEW UUID}
 
 Check the output folder.  
 
+
+### Step 3: Rename UUID updated old save files and move it to the dedicated server save folder.
+
 - Change the first filename to {NEW UUID}.sav and second filename to {Level.sav}
 
 Overwrite these two files to the dedicated server's save folder.  
@@ -49,7 +52,6 @@ Note that you can also use this script to recover lost other player's save file 
 - [Optional] remove old 00...0001.sav from `PalServer\Pal\Saved\SaveGames\0\<your_save_here>\Players\`
 
 - Your new dedicate server should now correctly map your new character UUID and your existing save file.
-
 
 
 ## How to transfer co-op save to dedicated server (As of 2024/2/25)
