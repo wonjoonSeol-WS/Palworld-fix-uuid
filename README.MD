@@ -28,9 +28,9 @@ The name of that new .sav file is the co-op host's new GUID. We will need the co
 
 - Run script on these two files:
   
-```python  
+```bash 
 # first file
-palworld-fix-uuid --file-path "{0000...0001.sav} --to-uuid {NEW UUID}  
+palworld-fix-uuid --file-path "{path to 0000...0001.sav} --to-uuid {NEW UUID}  
 
 # second file
 palworld-fix-uuid --file-path "{path to Level.sav} --to-uuid {NEW UUID}  
@@ -63,7 +63,7 @@ https://developer.valvesoftware.com/wiki/SteamCMD
 
 Open CMD and run the following command:  
 
-```
+```bash
 steamcmd +login anonymous +app_update 2394010 validate +quit  
 ```
 
